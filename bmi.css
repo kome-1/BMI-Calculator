@@ -1,0 +1,128 @@
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,700;1,400&family=Nunito+Sans:opsz,wght@6..12,600;6..12,700;6..12,800;6..12,900&family=Nunito:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  :root{
+    --main-color:blue;
+    --bg-color:white;
+
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Nunito Sans', sans-serif;
+   /* background: url();*/ 
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+   .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   }
+
+   .box{
+    min-width: 105px;
+    background-color: var(--bg-color);
+    border-radius: 35px;
+    text-align: center;
+    position: relative;
+   }
+
+   .box::before{
+    content: '';
+    position: absolute;
+    min-height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    z-index: -1;
+   }
+
+   h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+   }
+
+   .content{
+    padding: 0 40px;
+   }
+
+   .input{
+    background: var(--bg-color);
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+   }
+
+   .input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+   }
+
+   .input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+    width: 60%;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif ;
+   }
+
+   button#calculate{
+    font-family: 'Nunito Sans', sans-serif ;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    
+   }
+
+
+   button#calculate:hover{
+    background: var(--main-color);
+   }
+
+   .result{
+    padding: 30px 20px;
+   }
+
+   .result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+   }
+
+   .result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+   }
+
+   #comment{
+    color: var(--main-color);
+    font-weight: 800;
+   }
